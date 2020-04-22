@@ -1,0 +1,83 @@
+intents:
+  - greet
+  - how_to_do_EER
+  - step_by_step
+  - inform_type_client
+  - thank
+  - confirm
+  - deny
+  - how_to_modif_initiation
+  - what_after_initiation
+  - what_after
+  - no_question
+  - what_after_delta
+  - how_identification
+  - how_selection_marche_client
+  - how_to_know_client_risque
+  - what_after_interrogation
+  
+entities:
+  - process
+  - type_client
+  - step_EER
+slots:
+  type_client:
+    type: categorical
+    values:
+    - physique
+    - morale
+    - personne physique
+    - personne morale
+
+responses:
+  utter_greet:
+  - text: "Bonjour, j'espère que vous allez bien. Comment je peux vous aider?"
+
+  utter_EER_general_instruction:
+  - text: "Ne vous inquiétez pas! Les trois étapes d'une EER sont : Initiation EER, Interrogation des référentiels et Initiation KYC. Voulez-vous que vous accompagne étape par étape ou que je vous aide au niveau d'une étape précise?"
+  
+  utter_initiation_type_client:
+  - text: "OK ! Identifiez-vous sur SOGEKYC, accédez au contexte EER et commencez par initier le dossier en cliquant sur 'Nouveau dossier' et en renseignant les champs correspondants. Votre client est une personne physique, morale ou CORPO?"
+  
+  utter_identification:
+  - text: "L'outil SOGEKYC est accessible via le lien https://sogekyc.sgmaroc.root.net:8443/ et la connexion se fait par l'identifiant et le mot de passe de la session Windows." 
+  
+  utter_selection_marche_client:
+  - text: "Pour la sélection du marché / client, si votre client est une personne physique, sélectionnez client RETAIL et renseignez son intitulé sous M ou Mme. Si votre client est une personne morale (TPE ou PME), sélectionnez client RETAIL et renseignez son intituté sous SOCIETE. Dans les deux cas, sélectionnez le marché le plus proche à l'activité du client."  
+  
+  utter_client_risque:
+  - text: "Dans le cas où les interrogations vous ressortent des résultats, cochez la case qui correspond au client en question et envoyez le dossier."
+  
+  utter_modif_initiation:
+  - text: "Malheureusement, vous ne pouvez pas modifer une initiation EER. Dans le cas d'une erreur, il faut annuler et reprendre un nouveau dossier."
+  
+  utter_interrogation_PP:
+  - text: "Si votre client est une personne physique, une fois vous cliquerez sur 'Rechercher', les deux interrogrations VIZIR et Forces On Line vont s'effectuer automatiquement pour vérifier si votre client est risqué. Avez-vous des soucis là dessus? (Oui/Non)"
+  
+  utter_interrogation_PM:
+  - text: "Si votre client est une personne morale, une fois vous cliquerez sur 'Rechercher', l'interrogation Forces On Line va se faire automatiquement pour vérifier la raison sociale de l'entreprise en question. Mais, vous devez effectuer aussi les deux interrogations VIZIR et FOL pour tous les dirigeants, les actionnaires et les bénéficiaires effectifs sur les portails dédiés et vous les joindrez manuellement au dossier. Avez-vous des soucis là dessus? (Oui/Non)"
+  
+  utter_after_initiation:
+  - text: "Après l'initiation EER, vous devez effectuer les interrogations. Quel type de client avez-vous devant vous?"
+  
+  utter_after_what:
+  - text: "Après quoi? Je vous prie de préciser !"
+  
+  utter_after_delta:
+  - text: "Après la création de la fiche DELTA, récupérez le code client et retournez sur SOGEKYC pour effectuer l'initiation KYC. Vous trouverez plusieurs onglets par la suite en relation avec le client, les comptes du client, les interrogations et les pièces jointes."
+  
+  utter_delta:
+  - text: "Génial ! Donc après avoir effectué les interrogations, créez la fiche DELTA du client avec les mêmes informations renseignées."
+  
+  utter_help_interrogation:
+  - text: "Quelle est votre question?"
+  
+  utter_how_help:
+  - text: "Comment je peux vous aider alors?"
+  
+  utter_goodbye:
+  - text: "J'espère que j'ai pu vous aider. A la prochaine!"
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
