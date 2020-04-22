@@ -1,0 +1,129 @@
+## step_by_step_PP_story_01
+* greet
+  - utter_greet
+* how_to_do_EER
+  - utter_EER_general_instruction
+* step_by_step
+  - utter_initiation_type_client
+* how_identification
+  - utter_identification
+* how_selection_marche_client
+  - utter_selection_marche_client
+* inform_type_client
+  - slot{"type_client" : "physique"}
+  - utter_interrogation_PP
+* how_to_know_client_risque
+  - utter_client_risque
+* how_to_modif_initiation
+  - utter_modif_initiation
+* what_after
+  - utter_after_what
+* what_after_initiation
+  - utter_after_initiation
+* no_question
+  - utter_how_help
+* deny
+  - utter_delta
+* what_after_delta
+  - utter_after_delta
+* thank
+  - utter_goodbye
+  
+## step_by_step_PP_story_02
+* greet
+  - utter_greet
+* how_to_do_EER
+  - utter_EER_general_instruction
+* step_by_step
+  - utter_initiation_type_client
+* how_identification
+  - utter_identification
+* how_selection_marche_client
+  - utter_selection_marche_client
+* inform_type_client
+  - slot{"type_client" : "personne physique"}
+  - utter_interrogation_PP
+* how_to_know_client_risque
+  - utter_client_risque
+* how_to_modif_initiation
+  - utter_modif_initiation
+* what_after
+  - utter_after_what
+* what_after_initiation
+  - utter_after_initiation
+* confirm
+  - utter_help_interrogation
+* no_question
+  - utter_how_help
+* what_after_delta
+  - utter_after_delta
+* thank
+  - utter_goodbye
+  
+## step_by_step_PM_story_01
+* greet
+  - utter_greet
+* how_to_do_EER
+  - utter_EER_general_instruction
+* step_by_step
+  - utter_initiation_type_client
+* how_identification
+  - utter_identification
+* how_selection_marche_client
+  - utter_selection_marche_client
+* inform_type_client
+  - slot{"type_client" : "morale"}
+  - utter_interrogation_PM
+* how_to_know_client_risque
+  - utter_client_risque
+* how_to_modif_initiation
+  - utter_modif_initiation
+* what_after
+  - utter_after_what
+* what_after_initiation
+  - utter_after_initiation
+* what_after_interrogation
+  - utter_delta
+* deny
+  - utter_delta
+* what_after
+  - utter_after_what
+* no_question
+  - utter_how_help
+* what_after_delta
+  - utter_after_delta
+* thank
+  - utter_goodbye
+  
+## step_by_step_PM_story_02
+* greet
+  - utter_greet
+* how_to_do_EER
+  - utter_EER_general_instruction
+* step_by_step
+  - utter_initiation_type_client
+* how_identification
+  - utter_identification
+* how_selection_marche_client
+  - utter_selection_marche_client
+* inform_type_client
+  - slot{"type_client" : "personne morale"}
+  - utter_interrogation_PM
+* how_to_know_client_risque
+  - utter_client_risque
+* how_to_modif_initiation
+  - utter_modif_initiation
+* what_after
+  - utter_after_what
+* what_after_initiation
+  - utter_after_initiation
+* confirm
+  - utter_help_interrogation
+* what_after
+  - utter_after_what
+* no_question
+  - utter_how_help
+* what_after_delta
+  - utter_after_delta
+* thank
+  - utter_goodbye
