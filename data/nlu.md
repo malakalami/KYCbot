@@ -1,9 +1,10 @@
 ## intent:greet
 - Bonjour
-- Salut 
+- Salut
 - Bonsoir
 - Hey
 - Coucou
+- ALLO
 
 ## intent:how_identification
 - Comment je peux m'identifier sur SOGEKYC?
@@ -22,6 +23,8 @@
 - Je sais pas quelle case cocher au niveau de l'interrogation.
 - Quelles cases cocher pour l'interrogation?
 - Comment je peux savoir si mon client est risqué?
+- Comment je peux savoir que mon client est risqué?
+- comment savoir si mon client est risqué
 
 ## intent:how_modif_initiation
 - Comment je peux modifier une initiation EER?
@@ -61,9 +64,10 @@
 - Je voudrai effecteur une entrée en relation pour une [personne physique](type_client) mais je sais pas par où commencer.
 - Comment effectuer une entrée en relation?
 - Comment faire une entrée en relation?
+- hey comment faire une [EER](step) ?
 
 ## intent:inform_type_client
--[personne physique](type_client)
+- [personne physique](type_client)
 - Mon client est une [personne physique](type_client)
 - J'ai devant moi une [personne physique](type_client)
 - Je traite l'entrée en relation d'une [personne physique](type_client)
@@ -71,15 +75,8 @@
 - Le client devant moi est une [personne morale](type_client)
 - J'ai affaire à une [personne morale](type_client)
 - Je dois effectuer une EER d'une [personne morale](type_client)
-
-## synonym:EER
-- Entrée en relation 
-
-## synonym:personne physique
-- Physique
-
-## synonym:personne morale
-- Morale
+- hmm [physique](type_client:personne physique)
+- Comment effectuer une EER pour une [personne physique](type_client)?
 
 ## intent:step_by_step
 - Etape par étape
@@ -87,24 +84,27 @@
 - Accompagnez-moi
 - Oui, étape par étape s'il vous-plaît
 - J'aimerai bien que vous m'accompagner étape par étape
+- etape par etape
 
 ## intent:inform_step
 - [Initiation EER](step)
 - [Interrogation des referentiels](step)
 - [Initiation KYC](step)
-
-## synonym:interrogation des referentiels
-- Interrogation
+- [Interrogation des référentiels](step)
 
 ## intent:confirm
 - J'ai fini
 - Oui
 - Oui, j'ai fini
+- oui
+- yeah
+- done
 
 ## intent:deny
 - Non
 - Non, pas encore
 - J'ai pas encore fini
+- non
 
 ## intent:what_after_initiation
 - Je fais quoi après l'[initiation EER](step)?
@@ -118,6 +118,7 @@
 - Qu'est ce qui suit l'[interrogation](step)?
 - Qu'elle est la prochaine étape suite à l'[interrogation](step)?
 - Une fois j'ai fini [les interrogations](step), je fais quoi après?
+- Je fais quoi après l'[interrogation](step:interrogation des referentiels)?
 
 ## intent:what_after_delta
 - Je fais quoi après la création de la fiche [delta](step)?
@@ -130,6 +131,26 @@
 - Merci beaucoup
 - T'es super, merci
 - Merci énormément pour ton aide
-- Je te remercie 
-- Thank you 
+- Je te remercie
+- Thank you
+- merci
 
+## intent:how_you_doing
+- tu vas bien ?
+- Comment vas-tu?
+- ça va?
+
+## intent:unprecised_step
+- etape precise
+
+## synonym:EER
+- Entrée en relation
+
+## synonym:interrogation des referentiels
+- Interrogation
+
+## synonym:personne morale
+- Morale
+
+## synonym:personne physique
+- Physique
