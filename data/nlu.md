@@ -13,6 +13,7 @@
 - Comment je peux avoir accès à SOGEKYC?
 - Comment avoir accès à SOGEKYC?
 - Comment je peux m'authentifier à SOGEKYC?
+- Comment renseigner les données sur sogekyc
 
 ## intent:how_to_know_client_risque
 - Comment savoir si mon client est risqué?
@@ -32,12 +33,14 @@
 - J'ai fait une erreur au niveau de l'initiation EER, comment je peux modifier les informations?
 - Est-ce possible de modifier les informations du client?
 - Est-ce que je peux modifier les information du client en cas d'erreur?
+- Comment modifier une [initiation](step)?
 
 ## intent:how_delta
 - Comment je crée la fiche delta?
 - Peux-tu m'accompagner au niveau de Delta?
 - Je ne sais pas comment créer la ficher sur Delta?
 - Aide moi à créer la fiche sur Delta
+- Comment créer une fiche client
 
 ## intent:how_documents
 - Comment je peux ajouter les pièces jointes de mon client?
@@ -65,6 +68,10 @@
 - Comment effectuer une entrée en relation?
 - Comment faire une entrée en relation?
 - hey comment faire une [EER](step) ?
+- Comment effectuer une [EER](step)?
+- Comment effetuer une [EER](step)?
+- Comment on effectue une entrée en relation
+- Comment faire une eer
 
 ## intent:inform_type_client
 - [personne physique](type_client)
@@ -77,6 +84,9 @@
 - Je dois effectuer une EER d'une [personne morale](type_client)
 - hmm [physique](type_client:personne physique)
 - Comment effectuer une EER pour une [personne physique](type_client)?
+- [physique](type_client:personne physique)
+- Comment effectuer une EER pour une [personne morale](type_client)?
+- [Personne physique](type_client)
 
 ## intent:step_by_step
 - Etape par étape
@@ -85,12 +95,17 @@
 - Oui, étape par étape s'il vous-plaît
 - J'aimerai bien que vous m'accompagner étape par étape
 - etape par etape
+- étape par étape
+- Étape par étape
+- Etape par etape
 
 ## intent:inform_step
 - [Initiation EER](step)
 - [Interrogation des referentiels](step)
 - [Initiation KYC](step)
 - [Interrogation des référentiels](step)
+- Comment faire une [interrogation des référentiels](step) ?
+- Etape précise : [initiation kyc](step)
 
 ## intent:confirm
 - J'ai fini
@@ -99,6 +114,7 @@
 - oui
 - yeah
 - done
+- Done
 
 ## intent:deny
 - Non
@@ -111,6 +127,7 @@
 - Qu'elle est l'étape après l'[initiation EER](step)?
 - C'est quoi l'étape après l'[initiation EER](step)?
 - Qu'est ce qui suit l'[intiation EER](step)?
+- Je fais quoi après l'[initiation](step) ?
 
 ## intent:what_after_interrogation
 - Je fais quoi après l'[interrogation des référentiels](step)?
@@ -142,6 +159,21 @@
 
 ## intent:unprecised_step
 - etape precise
+
+## intent:Approve_wait
+- okay
+- Merci
+- Je fais quoi après [delta](step)?
+- Okay
+
+## intent:what_is_KYC
+- C'est quoi le [KYC](step)
+
+## intent:what_is_sogekyc
+- C'est quoi Sogekyc
+
+## intent:what_is_kyc
+- C'est quoi [KYC](step)?
 
 ## synonym:EER
 - Entrée en relation

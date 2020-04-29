@@ -21,6 +21,10 @@ intents:
 - why_error_documents
 - how_you_doing
 - unprecised_step
+- Approve_wait
+- what_is_KYC
+- what_is_sogekyc
+- what_is_kyc
 entities:
 - type_client
 - step
@@ -47,56 +51,58 @@ responses:
   - text: L'outil SOGEKYC est accessible via le lien https://sogekyc.sgmaroc.root.net:8443/
       et la connexion se fait par l'identifiant et le mot de passe de la session Windows.
   utter_how_to_do_EER:
-  - text: "Les trois étapes d'une EER sont : Initiation EER, Interrogation des référentiels\
-      \ et Initiation KYC. Voulez-vous que vous accompagne étape par étape ou que\
-      \ je vous aide au niveau d'une étape précise?"
+  - text: "Les trois étapes d'une EER sont : \n- Initiation EER\n- Interrogation des\
+      \ référentiels \n- Initiation KYC. \nVoulez-vous que vous accompagne étape par\
+      \ étape ou que je vous aide au niveau d'une étape précise?"
   utter_what_step:
   - text: Veuillez préciser l'étape s'il vous plaît.
   utter_how_initiation_EER_PP:
-  - text: Pour commencer, identifiez-vous sur SOGEKYC, accédez au contexte EER et
-      commencez par initier le dossier en cliquant sur 'Nouveau dossier'. Renseignez
-      l'intitulé de votre client (M. ou Mme.) ainsi que son marché (Particulier ou
-      Professionnel.) Vous avez fini? (Oui/Non)
+  - text: "Pour commencer,\n- Identifiez-vous sur SOGEKYC\n- Accédez au contexte EER\
+      \ \n- Initiez le dossier en cliquant sur 'Nouveau dossier'. \n- Renseignez l'intitulé\
+      \ de votre client (M. ou Mme.) ainsi que son marché (Particulier ou Professionnel.)\
+      \ \nVous avez fini?"
   utter_how_initiation_EER_PM:
-  - text: Pour commencer, identifiez-vous sur SOGEKYC, accédez au contexte EER et
-      commencez par initier le dossier en cliquant sur 'Nouveau dossier'. Renseignez
-      l'intitulé de votre client (Société ou Association) ainsi que son marché (Artisans
-      ou PPE). Vous avez fini? (Oui/Non)
+  - text: "Pour commencer, \n- Identifiez-vous sur SOGEKYC\n- Accédez au contexte\
+      \ EER\n- Initiez le dossier en cliquant sur 'Nouveau dossier'. \n- Renseignez\
+      \ l'intitulé de votre client (Société ou Association) ainsi que son marché (Artisans\
+      \ ou PPE). \nVous avez fini?"
   utter_how_interrogation_PP:
-  - text: Une fois vous renseignez toutes les informations et vous suivez le process,
-      cliquez sur 'Rechercher'. Les deux interrogrations VIZIR et Forces On Line vont
-      s'effectuer automatiquement pour vérifier si votre client est risqué. Done?
+  - text: "Une fois vous renseignez toutes les informations et vous suivez le process,\
+      \ cliquez sur 'Rechercher'. \nLes deux interrogrations VIZIR et Forces On Line\
+      \ vont s'effectuer automatiquement pour vérifier si votre client est risqué.\n\
+      Done?"
   utter_how_interrogation_PM:
-  - text: Une fois vous renseignez toutes les informations et vous suivez le process,
-      cliquez sur 'Rechercher'. L'interrogation Forces On Line va se faire automatiquement
-      pour vérifier la raison sociale de l'entreprise en question. Mais, vous devez
-      effectuer aussi les deux interrogations VIZIR et FOL pour tous les dirigeants,
-      les actionnaires et les bénéficiaires effectifs sur les portails dédiés et vous
-      les joindrez manuellement au dossier. Done? (Oui/Non)
+  - text: "Une fois vous renseignez toutes les informations et vous suivez le process,\
+      \ cliquez sur 'Rechercher'.\nL'interrogation Forces On Line va se faire automatiquement\
+      \ pour vérifier la raison sociale de l'entreprise en question. \nMais, vous\
+      \ devez effectuer aussi les deux interrogations VIZIR et FOL pour tous les dirigeants,\
+      \ les actionnaires et les bénéficiaires effectifs sur les portails dédiés et\
+      \ vous les joindrez manuellement au dossier. \nDone?"
   utter_delta:
   - text: Génial ! Donc après avoir effectué les interrogations, créez la fiche DELTA
       du client avec les mêmes informations renseignées. Vous avez fini?
   utter_how_initiation_KYC:
-  - text: Après la création de la fiche DELTA, récupérez le code client et retournez
-      sur SOGEKYC pour effectuer l'initiation KYC. Cliquez sur Dossiers et accédez
-      au dossier voulu en cliquant sur la flèche bleue. Vous trouverez plusieurs onglets
-      par la suite en relation avec le client, les comptes, les interrogations et
-      les pièces jointes. Et VOILAA !
+  - text: "Après la création de la fiche DELTA, \n- Récupérez le code client et retournez\
+      \ sur SOGEKYC pour effectuer l'initiation KYC. \n- Cliquez sur Dossiers et accédez\
+      \ au dossier voulu en cliquant sur la flèche bleue. \nVous trouverez plusieurs\
+      \ onglets par la suite en relation avec le client, les comptes, les interrogations\
+      \ et les pièces jointes. *\n*Et VOILAA !*"
   utter_error_documents:
-  - text: Pour joindre vos documents sans erreur, vous devez renseigner tous les champs
-      obligatoires. Assurez-vous toujours que la taille de votre document ne dépasse
-      pas 5Mo si c'est un document unitaire, et 25Mo si c'est un document multiple.
+  - text: "Pour joindre vos documents sans erreur, vous devez renseigner tous les\
+      \ champs obligatoires. \nAssurez-vous toujours que la taille de votre document\
+      \ ne dépasse pas 5Mo si c'est un document unitaire, et 25Mo si c'est un document\
+      \ multiple."
   utter_dno_delta:
   - text: Désolé ! Pour l'instant, je ne peux pas vous aider au niveau de Delta. Je
       peux vous aider autrement?
   utter_how_documents:
-  - text: Pour réaliser l'initiation KYC, joignez les documents associés à votre client.
-      Vous pouvez ajouter une seule pièce jointe, comme vous pouvez charger un document
-      contenant plusieurs pièces séparées par les intercalaires. (Une partie plus
-      détaillée sur les documents sera ajoutée ultérieurement)
+  - text: "Pour réaliser l'initiation KYC, joignez les documents associés à votre\
+      \ client:\nVous pouvez ajouter une seule pièce jointe, comme vous pouvez charger\
+      \ un document contenant plusieurs pièces séparées par les intercalaires. \n\
+      *(Une partie plus détaillée sur les documents sera ajoutée ultérieurement)*"
   utter_modif_initiation:
-  - text: Malheureusement, vous ne pouvez pas modifier une initiation EER. Dans le
-      cas d'une erreur, il faut annuler et reprendre un nouveau dossier.
+  - text: "Malheureusement, vous ne pouvez pas modifier une initiation EER. \nDans\
+      \ le cas d'une erreur, il faut annuler et reprendre un nouveau dossier."
   utter_client_risque:
   - text: Dans le cas où les interrogations vous ressortent des résultats, cochez
       la case qui correspond au client en question et envoyez le dossier.
@@ -106,6 +112,19 @@ responses:
   - text: Merci à vous, à la prochaine :)
   utter_fine:
   - text: Je vais bien, merci ! Comment je peux vous aider?
+  utter_what_is_kyc:
+  - text: "L'instruction KYC est une réglementation imposée et visitée régulièrement\n\
+      \ par le groupe d’action financière (GAFI), qui permet de vérifier l’identité\n\
+      \ des clients afin de prévenir les opérations de blanchiment d’argent et le\n\
+      \ financement du terrorisme."
+  - text: L'instruction KYC est une réglementation imposée et visitée régulièrement
+      par le groupe d’action financière (GAFI), qui permet de vérifier l’identité
+      des clients afin de prévenir les opérations de blanchiment d’argent et le financement
+      du terrorisme.
+  utter_what_is_sogekyc:
+  - text: SOGEKYC est l'outil workflow KYC de SGMA. L'outil SOGEKYC est accessible
+      via le lien https://sogekyc.sgmaroc.root.net:8443/ et la connexion se fait par
+      l'identifiant et le mot de passe de la session Windows.
 actions:
 - utter_greet
 - utter_what_type_client
@@ -125,4 +144,6 @@ actions:
 - utter_client_risque
 - utter_no
 - utter_goodbye
+- utter_what_is_kyc
 - utter_fine
+- utter_what_is_sogekyc

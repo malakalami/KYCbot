@@ -103,8 +103,6 @@
   - utter_delta
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 * thank
   - utter_goodbye
 
@@ -121,16 +119,10 @@
   - utter_how_initiation_EER_PP
 * confirm
   - utter_how_interrogation_PP
-* deny
-  - utter_no
 * confirm
   - utter_delta
-* deny
-  - utter_no
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 * thank
   - utter_goodbye
 
@@ -147,16 +139,10 @@
   - utter_how_initiation_EER_PM
 * confirm
   - utter_how_interrogation_PM
-* deny
-  - utter_no
 * confirm
   - utter_delta
-* deny
-  - utter_no
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 * thank
   - utter_goodbye
 
@@ -171,12 +157,8 @@
   - utter_how_interrogation_PP
 * confirm
   - utter_delta
-* deny
-  - utter_no
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 * thank
   - utter_goodbye
 
@@ -191,12 +173,8 @@
   - utter_how_interrogation_PM
 * confirm
   - utter_delta
-* deny
-  - utter_no
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 * thank
   - utter_goodbye
 
@@ -213,12 +191,8 @@
   - utter_how_interrogation_PP
 * confirm
   - utter_delta
-* deny
-  - utter_no
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 * thank
   - utter_goodbye
 
@@ -234,13 +208,9 @@
   - slot{"step" : "interrogation des référentiels"} 
   - utter_how_interrogation_PM
 * confirm
-  - utter_delta
-* deny
-  - utter_no
+  - utter_how_delta
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 * thank
   - utter_goodbye
 
@@ -255,8 +225,6 @@
   - utter_delta
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 
 ## Initiation_KYC_step_PM
 * greet
@@ -269,8 +237,6 @@
   - utter_delta
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 
 ## Initiation_KYC_step_no_client_PP
 * greet
@@ -285,8 +251,6 @@
   - utter_delta
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 * thank
   - utter_goodbye
 
@@ -303,8 +267,6 @@
   - utter_delta
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 * thank
   - utter_goodbye
 
@@ -318,12 +280,8 @@
   - utter_how_interrogation_PP
 * confirm
   - utter_delta
-* deny
-  - utter_no
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 
 ## Question_1_2_PM
 * how_modif_initiation
@@ -335,12 +293,8 @@
   - utter_how_interrogation_PM
 * confirm
   - utter_delta
-* deny
-  - utter_no
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 
 ## Question_3_PP
 * how_to_know_client_risque
@@ -350,8 +304,6 @@
   - utter_delta
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 
 ## Question_3_PM
 * how_to_know_client_risque
@@ -361,8 +313,6 @@
   - utter_delta
 * confirm
   - utter_how_initiation_KYC
-* deny
-  - utter_no
 
 ## Question_4
 * how_delta
@@ -379,3 +329,22 @@
 ## Question_6
 * how_you_doing
   - utter_fine
+* what_is_kyc
+  - utter_what_is_kyc
+* what_is_sogekyc
+  - utter_what_is_sogekyc
+
+## Story from conversation with bc616a2b-eff4-40c4-a41c-f2e479272ced on April 28th 2020
+
+* greet
+    - utter_greet
+* inform_type_client{"type_client":"personne physique"}
+    - slot{"type_client":"personne physique"}
+    - slot{"type_client":"personne physique"}
+    - utter_how_to_do_EER
+* step_by_step
+    - utter_how_initiation_EER_PP
+* deny
+    - utter_no
+* confirm
+    - slot{"type_client":"personne physique"}
