@@ -90,8 +90,11 @@
 
 ## intent:inform_step
 - [Initiation EER](step)
+- Comment faire une [initiation EER](step)
 - [Interrogation des referentiels](step)
+- Comment faire une [interrogation des référentiels?](step)
 - [Initiation KYC](step)
+- Comment faire l'[initiation KYC](step)?
 
 ## synonym:interrogation des referentiels
 - Interrogation
@@ -125,6 +128,33 @@
 - Qu'elle est la prochaine étape après [delta](step)?
 - Je dois faire quoi après [delta](step)?
 - J'ai créé la fiche sur [delta](step). Je fais quoi après?
+
+## intent:what_is_kyc
+- C'est quoi KYC?
+- KYC c'est quoi?
+- Une définition de KYC?
+
+## intent:what_is_sogekyc
+- C'est quoi SOGEKYC?
+- Une défnition de SOGEKYC?
+- Peux-tu me dire c'est quoi SOGEKYC?
+- SOGEKYC c'est quoi?
+
+## intent:how_you_doing
+- ça va?
+- Vous allez bien?
+- ça va bien?
+- Comment vas-tu?
+
+## intent:unprecised_step
+- Etape précise
+- Oui, étape précise stp
+
+## intent:cant_access_sogekyc
+- Je n'arrive pas à accéder à sogekyc
+- J'ai des problèmes d'accès au niveau de sogekyc
+- Je n'arrive pas à m'identifier
+- Je n'arrive pas à accéder
 
 ## intent:thank
 - Merci beaucoup

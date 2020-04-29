@@ -410,6 +410,68 @@
 * why_error_documents
   - utter_error_documents
   
+## new_story_conversation_1
+* greet
+  - utter_greet
+* how_you_doing
+  - utter_fine
+* what_is_kyc
+  - utter_what_is_kyc
+* what_is_sogekyc
+  - utter_what_is_sogekyc
+
+## new_story_conversation_2
+* inform_step
+  - utter_what_type_client
+* inform_type_client
+  - slot{"step" : "initiation EER", "type_client" : "personne physique"}
+  - utter_how_initiation_EER_PP
+  
+## new_story_conversation_3
+* inform_step
+  - utter_what_type_client
+* inform_type_client
+  - slot{"step" : "initiation EER", "type_client" : "personne physique"}
+  - utter_how_initiation_EER_PM
+  
+## new_story_conversation_4
+* inform_step
+  - utter_what_type_client
+* inform_type_client
+  - slot{"step" : "interrogation des référentiels", "type_client" : "personne physique"}
+  - utter_how_interrogation_PP
+  
+## new_story_conversation_5
+* inform_step
+  - utter_what_type_client
+* inform_type_client
+  - slot{"step" : "interrogation des référentiels", "type_client" : "personne morale"}
+  - utter_how_interrogation_PM
+  
+## new_story_conversation_6
+* inform_step
+  - utter_what_type_client
+* inform_type_client
+  - slot{"step" : "initiation KYC", "type_client" : "personne physique"}
+  - utter_delta
+* confirm
+  - utter_how_initiation_KYC
+  
+## new_story_conversation_7
+* inform_step
+  - utter_what_type_client
+* inform_type_client
+  - slot{"step" : "initiation KYC", "type_client" : "personne morale"}
+  - utter_delta
+* confirm
+  - utter_how_initiation_KYC
+  
+## cant_access_sogekyc
+* what_is_sogekyc
+  - utter_what_is_sogekyc
+* cant_access_sogekyc
+  - utter_cant_access
+  
 
 
 
