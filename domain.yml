@@ -1,0 +1,160 @@
+intents:
+  - document_etudiant_ME_justification_activite
+  - document_retraite_ME_justification_activite
+  - document_PP_verification_identite
+  - document_PP_procuration_surcompte
+  - document_association_justification_sources_revenu
+  - document_dirigeant_verification_identite
+  - document_societe_actions_porteur
+  - document_beneficiare_effectif_cas_fiducies_verification_identite
+  - information_client_habituel_verification_identite
+  - information_client_evaluation_risque
+  - information_entrepreneur_individuel_verification_identite
+  - information_beneficiare_effectif_verification_identite
+  - information_nonsalarie_F_justification_activite
+  - what_is_beneficiare_effectif
+  - who_are_beneficiare_effectif_association
+  - what_is_mandataire
+  - how_client_RME_RE_justif_structure_actionnariale
+  - how_client_NR_justif_structure_actionnariale
+  - does_cni_needs_translation
+  - is_societegestion_responsable_kyc
+  - is_distributeur_fonds_responsanble_kyc
+  - does_conseiller_need_proof_refus
+  - do_clients_occasionnels_need_kyc
+  - do_obligations_activite_BP_need_kyc
+  - why_bearer_shares_risk
+  - what_conditions_validation_piece_identite
+  - who_are_beneficiare_effectif_fond_investissement
+  - in_what_case_administrateur_fonds_kyc
+  - what_procedure_beneficiare_effectif_nonconnu
+  - greet
+  - thank
+responses:
+  utter_greet:
+  - text: "Bonjour, posez-moi votre question"
+  
+  utter_thank:
+  - text: "Merci à vous, à la prochaine"
+  
+  utter_document_etudiant_ME_justification_activite:
+  - text: "Carte étudiante à jour ou certificat de scolarité à jour"
+  
+  utter_document_retraite_ME_justification_activite:
+  - text: "Les titres de pension"
+  
+  utter_document_PP_verification_identite:
+  - text: "Carte nationale d'identité ou passeport, carte de séjour, carte de résident"
+  
+  utter_document_PP_procuration_surcompte:
+  - text: "Un document officiel attestant de l'identité de la personne ayant reçu procuration et le justificatif du pouvoir de la personne ayant reçu procuration"
+  
+  utter_document_association_justification_sources_revenu:
+  - text: "Montant des cotisations des adhérants / Montant des subventions accordées"
+  
+  utter_document_dirigeant_verification_identite:
+  - text: "Registre des dirigeants, procès-verbal d'assemblée, dernière version à jour des statuts, rapport annuel audité du dernier exercice clos, extrait de registre officiel"
+  
+  utter_document_societe_actions_porteur:
+  - text: "Une déclaration signée du représentant légal de la société comportant toutes les informations sur les personnes détenant les bons au porteur / Une attestation signée par chacun des actionnaires dans laquelle ils attestent de la détention de bons aux porteurs / Une déclaration signée par le domiciliataire avec la déclaration 'Nous sommes l'établissement qui conserve les titres au porteur'"
+  
+  utter_document_beneficiare_effectif_cas_fiducies_verification_identite:
+  - text: "Il faut obtenir et analyser le document constitutif du fonds (statut, trust deed ou document similaire)"
+  
+  utter_information_client_habituel_verification_identite:
+  - text: "Fiabilité / A jour / Lisibilité"
+  
+  utter_information_client_evaluation_risque:
+  - text: "Le montant et les opérations envisagées"
+  
+  utter_information_entrepreneur_individuel_verification_identite:
+  - text: "Un document fiscal justifiant de ses ressources"
+  
+  utter_information_beneficiare_effectif_verification_identite:
+  - text: "Factiva / Articles de presse de renommée"
+  
+  utter_information_nonsalarie_F_justification_activite:
+  - text: "Un mémo sur l'activité exercée à faire signer par le client non salarié particulier si les ressources de ce dernier sont inférieures à 30 000euros par an et s'il exerce une activité salariée en complément de son activité non-salariée"
+  
+  utter_what_is_beneficiare_effectif:
+  - text: "Un bénéficiaire effectif est défini comme la ou les personnes physiques qui possèdent ou contrôlent, directement ou indirectement, la société déclarante"
+  
+  utter_who_are_beneficiare_effectif_association:
+  - text: "Le président, le trésorier et toute autre personne exerçant un pouvoir sur l'association sont des bénéficiaires effectifs"
+
+  utter_what_is_mandataire:
+  - text: "Un mandataire est une personne physique habilitée par la personne morale à faire fonctionner le compte" 
+
+  utter_how_client_RME_RE_justif_structure_actionnariale:
+  - text: "Quand le client est classé en risque ME ou E, sa déclaration seul ne peut pas justifier la structure actionnariale mais doit faire l'objet d'une saisine de l'AMLO"
+
+  utter_how_client_NR_justif_structure_actionnariale:
+  - text: "La déclaration d'une personne morale non risquée peut suffir pour justifier sa structure actionnariale"
+
+  utter_does_cni_needs_translation:
+  - text: "Si la CNI est une langue étrangère à celles valides dans le pays, une traduction de source fiable est nécessaire, et doit être signée et datée par la personne l'ayant validée."
+
+  utter_is_societegestion_responsable_kyc:
+  - text: "La société de gestion est responsable du respect des obligations réglementaires applicables au fonds en matière de KYC des investisseurs."
+
+  utter_is_distributeur_fonds_responsanble_kyc:
+  - text: "Une société de gestion peut déléguer son rôle de commercialisation et même ses obligations en matière d'AML/KYC, mais elle ne peut pas déléguer sa responsabilité"
+
+  utter_does_conseiller_need_proof_refus:
+  - text: "Le conseiller de clientèle est libre de décliner une entrée en relation, à condition que son refus ne soit pas dicté ni par la mauvaise foi ni par la discrimination"
+
+  utter_do_clients_occasionnels_need_kyc:
+  - text: "Les clients occasionnels sont ceux qui se limitent à des opérations ponctuelles de change manuel et aux opérations de transfert d'argent modestes dans le cadre d'un contrat d'agent signé avec une société de transfert"
+
+  utter_do_obligations_activite_BP_need_kyc:
+  - text: "Les obligations de connaissance clients (KYC) relatives à l'activité de la banque privée sont traitées dans la procédure 'Compliance handbook for private banking activity in PRIV/IBFS Partnerships'"
+
+  utter_why_bearer_shares_risk:
+  - text: "Les actionnaires des Bearer Shares Companies sont anonymes. La société émettrice n'enregistre ni le propriétaire de l'action, ni les pistes de transfert de propriété "
+
+  utter_what_conditions_validation_piece_identite:
+  - text: "Le document d'identité du client personne physique doit être délivré par une autorité officielle / Mentionner les noms, prénoms, date et lieu de naissance / Comporter une photographie représentative / Contenir la date et le lieu d'émission du document / Etre numéroté / Etre lisible et compréhensible / Mentionner les noms et la qualité de l'autorité ou de la personne ayant délivré le document / Etre en cours de validité lors de l'entrée en relation"
+
+  utter_who_are_beneficiare_effectif_fond_investissement:
+  - text: "Les bénéficiares effectifs d'un fonds d'investissement sont les dirigeants fonds lorsque celui-ci est sous-forme d'une société ou les dirigeants de la société de gestion lorsque le fonds est constitué sous une autre forme"
+
+  utter_in_what_case_administrateur_fonds_kyc:
+  - text: "L'administrateur n'est en charge du KYC que pour autant qu'il agit également en tant qu'agent de transfert. Si un agent de transfert distinct de l'administrateur a été nommé par la société de gestion, c'est l'agent de transfert qui sera, en tout état de cause, l'entité en charge du KYC"
+
+  utter_what_procedure_beneficiare_effectif_nonconnu:
+  - text: "Une copie d'une pièce d'identité est obligatoire, et si elle ne peut être obtenue, le dossier KYC doit être remonté à l'AMLO avant l'ouverture du compte pour étude et avis."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
