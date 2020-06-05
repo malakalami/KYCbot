@@ -43,7 +43,7 @@ responses:
   - text: "Super ! Posez-moi une nouvelle question"
   
   utter_another_formulation:
-  - text: "Je suis désolé, pouvez-vous reformuler votre question d'une manière plus simple?"
+  - text: "Je suis désolé, Il m'arrive de mélanger les choses des fois. Pouvez-vous reformuler votre question d'une manière plus simple?"
   
   utter_document_etudiant_ME_justification_activite:
   - text: "Carte étudiante à jour ou certificat de scolarité à jour. Est-ce que je vous ai répondu?"
