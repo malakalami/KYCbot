@@ -76,6 +76,14 @@
 * what_procedure_beneficiare_effectif_nonconnu
   - utter_what_procedure_beneficiare_effectif_nonconnu
   
+## Good_experience
+* approve
+  - utter_another_question
+  
+## bad_experience
+* deny
+  - utter_another_formulation
+  
 
 
 

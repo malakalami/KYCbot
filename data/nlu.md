@@ -1,3 +1,11 @@
+## intent:approve
+- Oui
+- Yes
+
+## intent:deny
+- Non
+- No
+
 ## intent:greet
 - Bonjour
 - Bonsoir
@@ -127,6 +135,7 @@
 ## intent:what_procedure_beneficiare_effectif_nonconnu
 - Quelle est la procédure à suivre en l'absence d'un document juridique recevable attestant des éléments d'identification du bénéficaire effectif et lorsque celui-ci n'est pas notoirement connu?
 - En l'absence d'un document juridique attestant les éléments d'identification du bénéficaire effectif ou lorsque celui-ci n'est pas notoirement connu, qu'elle est la procédure à suivre?
+
 
 
 
