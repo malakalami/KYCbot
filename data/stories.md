@@ -1,4 +1,6 @@
 ## Story_one
+* greet
+  - utter_greet
 * document_etudiant_ME_justification_activite
   - utter_document_etudiant_ME_justification_activite
 * document_PP_verification_identite
@@ -7,6 +9,8 @@
   - utter_document_PP_procuration_surcompte
 
 ## Story_two
+* greet
+  - utter_greet
 * document_retraite_ME_justification_activite
   - utter_document_retraite_ME_justification_activite
 * document_societe_actions_porteur
@@ -15,6 +19,8 @@
   - utter_information_client_habituel_verification_identite
 
 ## Story_three
+* greet
+  - utter_greet
 * document_association_justification_sources_revenu
   - utter_document_association_justification_sources_revenu
 * information_client_evaluation_risque
@@ -23,6 +29,8 @@
   - utter_document_beneficiare_effectif_cas_fiducies_verification_identite
 
 ## Story_four
+* greet
+  - utter_greet
 * document_dirigeant_verification_identite
   - utter_document_dirigeant_verification_identite
 * information_beneficiare_effectif_verification_identite
@@ -31,6 +39,8 @@
   - utter_who_are_beneficiare_effectif_association
 
 ## Story_five
+* greet
+  - utter_greet
 * information_entrepreneur_individuel_verification_identite
   - utter_information_entrepreneur_individuel_verification_identite
 * information_nonsalarie_F_justification_activite
@@ -39,6 +49,8 @@
   - utter_what_is_beneficiare_effectif
   
 ## Story_six
+* greet
+  - utter_greet
 * what_is_mandataire
   - utter_what_is_mandataire
 * does_cni_needs_translation
@@ -47,6 +59,8 @@
   - utter_is_societegestion_responsable_kyc
   
 ## Story_seven
+* greet
+  - utter_greet
 * how_client_RME_RE_justif_structure_actionnariale
   - utter_how_client_RME_RE_justif_structure_actionnariale
 * do_clients_occasionnels_need_kyc
@@ -55,6 +69,8 @@
   - utter_who_are_beneficiare_effectif_fond_investissement
   
 ## Story_eight
+* greet
+  - utter_greet
 * how_client_NR_justif_structure_actionnariale
   - utter_how_client_NR_justif_structure_actionnariale
 * is_distributeur_fonds_responsanble_kyc
@@ -63,6 +79,8 @@
   - utter_do_obligations_activite_BP_need_kyc
 
 ## Story_nine
+* greet
+  - utter_greet
 * does_conseiller_need_proof_refus
   - utter_does_conseiller_need_proof_refus
 * what_conditions_validation_piece_identite
@@ -71,6 +89,8 @@
   - utter_in_what_case_administrateur_fonds_kyc
 
 ## Story_ten
+* greet
+  - utter_greet
 * why_bearer_shares_risk
   - utter_why_bearer_shares_risk
 * what_procedure_beneficiare_effectif_nonconnu
