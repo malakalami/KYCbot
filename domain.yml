@@ -1,0 +1,340 @@
+intents:
+  - greet
+  - thank
+  - KYC_societe_gestion
+  - KYC_distributeur_fonds_investissement
+  - KYC_client_occasionnel
+  - KYC_obligations_banque_privee
+  - KYC_administrateur_fonds_investissement
+  - Document_etudiant_ME_justification_activite
+  - Document_retraite_ME_justification_activite
+  - Document_PP_verification_identite
+  - Document_PP_procuration_surcompte
+  - Document_association_justification_sources_revenu
+  - Document_dirigeant_verification_identite
+  - Document_societe_actions_porteur
+  - Document_beneficiare_effectif_cas_fiducies_verification_identite
+  - Document_justif_domicile
+  - Document_identification_PM
+  - Document_types_pieces_identite
+  - Document_justif_activite_CLIPRO
+  - Document_justif_domicile_hebergement_gratuit
+  - Document_identification_particulier_RF
+  - Document_justif_structure_actionnariale_PM_ME
+  - Document_cni_traduction
+  - Document_identite_conditions_validite
+  - Document_critère_identite_client_habituel
+  - Document_justif_ressources_entrepreneur_indiv 
+  - Document_identification_BE 
+  - Document_justif_activite_non_salarie_F 
+  - Vigilance_personnes_procuration_sur_compte
+  - PPE_fondateur_autorite_religieuse
+  - PPE_membres_associés
+  - PPE_high_level_membre_gouvernemt_commission_europ
+  - PPE_notion_associee
+  - PPE_cessation_fonction_statut_PPE
+  - PPE_fin_statut
+  - PPE_distinction_nationale_etrangere
+  - PPE_employes_personnels
+  - PPE_moment_determination_statut
+  - Embargos_sanctions_verifications_specifiques
+  - Embargos_sanctions_dispositif
+  - Embargos_sanctions_outil_verification
+  - Information_negative_remonter_dossier_kyc
+  - Information_negative_what
+  - Information_negative_sources
+  - Information_negative_niveau_validation_client_MF
+  - FATCA_mise_ajour_demenagement_usa
+  - FATCA_verification_statut
+  - BE_tiers_PP
+  - BE_difference_client_RF_client_RE
+  - BE_identification_non_applicable
+  - BE_seuil_identification_10%
+  - BE_what
+  - BE_elements_necessaires
+  - BE_tresorier_association
+  - BE_fonds_investissement_grand_public
+  - BE_non_connu_procedure
+  - Classification_incidence_frequence_revue_periodique
+  - Classification_systématique_RE
+  - Classification_degradation_necessite_validation_AMLO
+  - Classification_entree_en_relation_PM
+  - Classification_risque_LCB_FT_relation_affaires 
+  - Revue_periodique_what
+  - Revue_periodique_alerte_forces_declencheur
+  - Revue_periodique_non_effectuee_solution
+  - Revue_periodique_frequence_PP_MF
+  - Revue_periodique_frequence_PM_ME
+  - Revue_periodique_obligatoire_remise_nv_moyen_paiement
+  - Revue_periodique_obligatoire_changement_structure_actionnariale
+  - Revue_periodique_quels_moments
+  - What_is_mandataire
+  - What_is_principe_4yeux
+  - What_is_PP_HVA
+  - Adresse_postale_domicile_client
+  - Validation_dossiers_clients_ME
+  - Entretien_client_E_conseiller
+  - Refus_entree_en_relation
+  - Bearer_Shares_Companies
+responses:  
+  utter_greet:
+  - text: "Bonjour, comment je peux vous aider?"
+  
+  utter_KYC_societe_gestion:
+  - text: "La société de gestion est responsable du respect des obligations réglementaires applicables au fonds en matière de KYC des investisseurs."
+  
+  utter_KYC_distributeur_fonds_investissement:
+  - text: "Une société de gestion peut déléguer son rôle de commercialisation et même ses obligations en matière d'AML/KYC, mais elle ne peut pas déléguer sa responsabilité."
+  
+  utter_KYC_client_occasionnel:
+  - text: "Les clients occasionnels sont ceux qui se limitent à des opérations ponctuelles de change manuel et aux opérations de transfert d'argent modestes dans le cadre d'un contrat d'agent signé avec une société de transfert."
+  
+  utter_KYC_obligations_banque_privee:
+  - text: "Les obligations de connaissance clients (KYC) relatives à l'activité de la banque privée sont traitées dans la procédure 'Compliance handbook for private banking activity in PRIV/IBFS Partnerships'."
+  
+  utter_KYC_administrateur_fonds_investissement:
+  - text: "L'administrateur n'est en charge du KYC que pour autant qu'il agit également en tant qu'agent de transfert. Si un agent de transfert distinct de l'administrateur a été nommé par la société de gestion, c'est l'agent de transfert qui sera, en tout état de cause, l'entité en charge du KYC."
+  
+  utter_thank:
+  - text: "Merci à vous, à la prochaine."
+  
+  utter_Document_etudiant_ME_justification_activite:
+  - text: "Carte étudiante à jour ou certificat de scolarité à jour."
+  
+  utter_Document_retraite_ME_justification_activite:
+  - text: "Les titres de pension."
+  
+  utter_Document_PP_verification_identite:
+  - text: "Carte nationale d'identité ou passeport, carte de séjour, carte de résident."
+  
+  utter_Document_PP_procuration_surcompte:
+  - text: "Un document officiel attestant de l'identité de la personne ayant reçu procuration et le justificatif du pouvoir de la personne ayant reçu procuration."
+  
+  utter_Document_association_justification_sources_revenu:
+  - text: "Montant des cotisations des adhérants / Montant des subventions accordées."
+  
+  utter_Document_dirigeant_verification_identite:
+  - text: "Registre des dirigeants, procès-verbal d'assemblée, dernière version à jour des statuts, rapport annuel audité du dernier exercice clos, extrait de registre officiel."
+  
+  utter_Document_societe_actions_porteur:
+  - text: "Une déclaration signée du représentant légal de la société comportant toutes les informations sur les personnes détenant les bons au porteur / Une attestation signée par chacun des actionnaires dans laquelle ils attestent de la détention de bons aux porteurs / Une déclaration signée par le domiciliataire avec la déclaration 'Nous sommes l'établissement qui conserve les titres au porteur."
+  
+  utter_Document_beneficiare_effectif_cas_fiducies_verification_identite:
+  - text: "Il faut obtenir et analyser le document constitutif du fonds (statut, trust deed ou document similaire)"
+  
+  utter_Document_justif_domicile:
+  - text: "Si le client déclare résider à l'adresse qui figure sur sa CINE, ce document fait fois de justificatif d'adresse, sinon contrat de bail, une facture d'eau, d'alectricité, de gaz ou de téléphonie."
+  
+  utter_Document_identification_PM:
+  - text: "Pour identifier une personne morale, l'agence doit obtenir un extrait de registre de commerce daté de moins de trois mois constatant sa dénomination légale, sa forme juridique et l’adresse de son siège social."
+  
+  utter_Document_types_pieces_identite:
+  - text: "Marocains : CINE, Passeport / Etranger Résident : Carte d'immatriculation (carte de séjour) / Etranger non résident : Passeport"
+  
+  utter_Document_justif_activite_CLIPRO:
+  - text: "Une carte professionnelle de commerçant et/ou un extrait du registre de commerce ou un extrait du répertoire des métiers et/ou la carte professionnelle de l’artisan ou un extrait de l’enregistrement à certains ordres (médecins, avocats, agents immobiliers …)"
+  
+  utter_Document_justif_domicile_hebergement_gratuit:
+  - text: "Pour les personnes hébergées à titre gratuit, les justificatifs de domicile requis sont une attestation d'hébergement de l’hébergeant ET une pièce d'identité de l'hébergeant ET un justificatif de domicile de l'hébergeant valide."
+  
+  utter_Document_identification_particulier_RF:
+  - text: "Un document officiel attestant de l’identité du client / Un justificatif de domicile à jour à la date du recueil des documents."
+  
+  utter_Document_justif_structure_actionnariale_PM_ME:
+  - text: "Quand le client est classé en risque ME ou E, sa déclaration seul ne peut pas justifier la structure actionnariale mais doit faire l'objet d'une saisine de l'AMLO. La recevabilité d’une déclaration émanant d’une tierce personne (avocat, notaire, teneur de compte) doit être soumise à l’accord de l’AMLO qui doit l’analyser à la lumière des particularités du dossier."
+  
+  utter_Document_cni_traduction:
+  - text: "Si la CNI est une langue étrangère à celles valides dans le pays, une traduction de source fiable est nécessaire, et doit être signée et datée par la personne l'ayant validée."
+  
+  utter_Document_identite_conditions_validite:
+  - text: "Le document d'identité du client personne physique doit: être délivré par une autorité officielle / Mentionner les noms, prénoms, date et lieu de naissance / Comporter une photographie représentative / Contenir la date et le lieu d'émission du document / Etre numéroté / Etre lisible et compréhensible / Mentionner les noms et la qualité de l'autorité ou de la personne ayant délivré le document / Etre en cours de validité lors de l'entrée en relation"
+  
+  utter_Document_critère_identite_client_habituel:
+  - text: "Fiabilité / A jour / Lisibilité"
+  
+  utter_Document_justif_ressources_entrepreneur_indiv:
+  - text: "Un document fiscal justifiant de ses ressources."
+  
+  utter_Document_identification_BE:
+  - text: "Articles de presse de renommée / Rapports de base de données externes type Factiva et Lexis Diligence/ Les réseaux sociaux de type Facebook, Viadeo, Linkedin ou base communautaire de type Wikipedia ne sont pas des sources acceptables."
+  
+  utter_Document_justif_activite_non_salarie_F:
+  - text: "Un CRE signé par le client mentionnant l’activité exercée  si les ressources de ce dernier sont inférieures à 300 KDH par an."
+  
+  utter_Vigilance_personnes_procuration_sur_compte:
+  - text: "Les obligations s’étendent aux personnes qui leur sont associées, à savoir / Pour les clients Personnes Physiques : les personnes détenant une procuration ou un pouvoir sur le compte / Pour les clients Personnes Morales : les Dirigeants, les Actionnaires Directs, les Bénéficiaires Effectifs, Mandataires dûment habilités à faire fonctionner le compte."
+  
+  utter_PPE_fondateur_autorite_religieuse:
+  - text: "Tout chef, fondateur ou représentant principal d’une autorité religieuse doit être considéré comme un PPE."
+  
+  utter_PPE_membres_associés:
+  - text: "Toutes les personnes connues pour être étroitement liées à une PPE doivent également être classées comme PPE."
+  
+  utter_PPE_high_level_membre_gouvernemt_commission_europ:
+  - text: "Seul un roi, prince, chef d’état ou de gouvernement est considéré comme un PPE High Level."
+  
+  utter_PPE_notion_associee:
+  - text: "Il s'agit des  Fonctions publiques importantes et Les proches de PPE. Les Personnes Politiquement Exposées (« PPE » nationales et étrangères) sont des personnes qui occupent, ou ont occupé, des fonctions publiques importantes ainsi que les membres directs de leur famille ou les personnes connues pour leur être étroitement liées. La fonction hautement corruptible est hors définition."
+  
+  utter_PPE_cessation_fonction_statut_PPE:
+  - text: "Lorsqu’un client PPE a cessé d’exercer ses fonctions depuis plus de 3 ans, l’AMLO peut le déclasser, après analyse formalisée de la situation et évaluation du niveau d’influence conservé par la PPE. Le déclassement du « statut PPE » après la cessation de ses fonctions doit être effectué uniquement sur la base d’une analyse objective des éléments pertinents. Cependant, les chefs d’Etat, chefs de gouvernement, princes et rois régnants doivent être considérées comme conservant le statut PPE durant toute la relation d’affaires sans limitation de durée."
+  
+  utter_PPE_fin_statut:
+  - text: "Le statut de PPE prend fin 3 ans minimum après la fin du mandat, seul l’AMLO peut déclasser le client en tant que PPE s’il estime que la position du PPE ne le met plus dans une position privilégiée (informations sensibles, contrôle d’organe d’administration, influence…)."
+  
+  utter_PPE_distinction_nationale_etrangere:
+  - text: "Aucune distinction ne s’opère entre les PPE nationales et les PPE étrangères (ou non-résidentes). Le critère géographique associé à la nationalité, le pays de résidence ou le pays d’exercice des fonctions de la PPE doit être pris en compte dans le cadre de l’évaluation globale des risques de blanchiment et une vigilance particulière doit être observée à l’ouverture d’un compte pour une PPE dans un pays où elle n’a pas de résidence (principale ou secondaire)."
+  
+  utter_PPE_employes_personnels:
+  - text: "Les employés personnels du PPE doivent être classés comme PPE et comme client ayant un «statut PPE» lorsqu’ils font partie de son cercle d’influence."
+  
+  utter_PPE_moment_determination_statut:
+  - text: "La détermination du statut PPE doit être effectuée avant l’ouverture du compte, mais aussi lors de la remédiation ou la revue du KYC."
+  
+  utter_Embargos_sanctions_verifications_specifiques:
+  - text: "A Tous les clients quel que soit leur niveau de risque. Outre les obligations réglementaires effectuées au titre du Dispositif LCB/FT, le Dispositif Embargos/Sanctions requiert, pour l’ensemble des clients, quelque soit leur niveau de risque, de : S’assurer que le client et les personnes associées ne font pas l’objet de sanctions par la consultation de FORCES Online / Analyser des activités du client et de l’opération envisagée au titre du Dispositif Embargos/Sanctions."
+  
+  utter_Embargos_sanctions_dispositif:
+  - text: "Consultation de FORCES online afin de s’assurer que les clients ou personnes associées ne font pas l’objet de sanctions / Analyser les activités du client et l’opération envisagée / Pour les clients ayant une activité internationale, le Conseiller de Clientèle doit procéder à l’analyse de l’activité du client et, le cas échéant, de l’opération à l’origine de la relation d’affaires doit être effectuée afin de déterminer l’exposition du client aux risques de sanctions internationales / Cette analyse est effectuée sur la base d’un « questionnaire Embargo » rempli et signé par le client."
+  
+  utter_Embargos_sanctions_outil_verification:
+  - text: "FORCES Onlines"
+  
+  utter_Information_negative_remonter_dossier_kyc:
+  - text: "Le conseiller de clientèle doit remonter le dossier KYC à l’AMLO sans délai. L’AMLO procédera à des recherches plus approfondies à partir des bases de recherche."
+  
+  utter_Information_negative_what:
+  - text: "Toutes les informations négatives suivantes doivent être considérées comme significatives et doivent faire l’objet d’une alerte : Les crimes financiers tels que le blanchiment d’argent, le financement du terrorisme, l’exposition à une sanction internationale (OFAC ou autre), la violation d’une réglementation en matière de blanchiment d’argent et la corruption (FCPA, UK Bribery Act, Sapin II ou autre). Les poursuites judiciaires, les condamnations et tout acte de fraude, de dissimulation, de falsification ou de manipulation émanant de bases de données externes (World-Check, Lexis Diligence, Factiva), titre de la presse, nationale et internationale, les revues professionnelles et communiqués d’agence de presse liés au blanchiment d’argent, au financement du terrorisme, à la corruption, le trafic d’influence et à la délinquance économique."
+  
+  utter_Information_negative_sources:
+  - text: "World check, Factiva, Lexis Diligence"
+  
+  utter_Information_negative_niveau_validation_client_MF:
+  - text: "L’AMLO doit valider tous les dossiers de clients présentant des informations négatives peu importe leur niveau de risque."
+  
+  utter_FATCA_mise_ajour_demenagement_usa:
+  - text: "Dans un délai de 90 jours. Un changement de circonstances est un changement dans la situation du client qui rend son statut FATCA et/ou la documentation fournie invalide. / Exemples : Pour une personne physique : changement de résidence ou d’adresse vers les US, pays de naissance inconnu qui s’avère être les USA, numéro de téléphone US, etc… Pour une personne morale : changement d’activité, changement de bénéficiaire effectif pour une Entité Non Financière Passive (Passive NFFE), expiration d’un formulaire fiscal, changement de statut d’une institution financière (changement de contexte du pays), etc. Un dispositif permettant d’identifier ces événements au fil de l’eau est mis en place (identification par les conseillers, Compliance FATCA). Les documents nécessaires doivent être collectés dans les 90 jourssuivant l’événement, sinon le client devient Récalcitrant'. "
+  
+  utter_FATCA_verification_statut:
+  - text: "Le statut FATCA d’un client ainsi que la présence des documents justificatifs doivent être vérifiés lors de la revue périodique du dossier KYC."
+  
+  utter_BE_tiers_PP:
+  - text: "Dans la plupart des cas, il n’existe pas de Bénéficiaire Effectif d’une personne physique car toutes les opérations faites par un client sont effectuées pour son propre compte. Néanmoins, en théorie, dans des situations rares, des opérations peuvent être effectuées par un client pour le compte d’un tiers non-déclaré, par exemple dans le cas où le client n’est qu’un « prête-nom ». Un compte ne doit pas être ouvert ou maintenu ouvert dans de telles circonstances."
+  
+  utter_BE_difference_client_RF_client_RE:
+  - text: "Dans le cas des clients classés en risque élevé, le seuil d’identification des bénéficiaires effectifs est abaissé à 10% de possession du capital ou des droits de vote."
+  
+  utter_BE_identification_non_applicable:
+  - text: "Dans le cas d’une autorité publique ou d’un organisme public au sein de l’Union Européenne, l’espace économique européen ou désigné au titre d’un engagement international de la France. Pour cette typologie de clientèle, il convient de collecter une preuve documentaire incluant les mentions suivantes : Dénomination / Adresse / Forme juridique (preuve permettant de déterminer qu’il s’agit bien d’une autorité publique ou un organisme)."
+  
+  utter_BE_seuil_identification_10%:
+  - text: "Le seuil est abaissé de 25% à 10% pour les clients classés en risque Elevé."
+  
+  utter_BE_what:
+  - text: "On entend par bénéficiaire effectif d’une personne morale la ou les personnes physiques qui : détiennent, directement ou indirectement, 25 % ou plus du capital ou des droits de vote du client ; ou exercent, par tout autre moyen, un pouvoir de contrôle sur les organes de gestion, d'administration ou de direction de la société ou sur l'assemblée générale de ses associés."
+  
+  utter_BE_elements_necessaires:
+  - text: "Nom, Prénom, Date de naissance et Lieu de naissance."
+  
+  utter_BE_tresorier_association:
+  - text: "Le président, le trésorier et toute autre personne exerçant un pouvoir sur l'association sont des bénéficiaires effectifs."
+  
+  utter_BE_fonds_investissement_grand_public:
+  - text: "Les bénéficiares effectifs d'un fonds d'investissement sont les dirigeants fonds lorsque celui-ci est sous-forme d'une société ou les dirigeants de la société de gestion lorsque le fonds est constitué sous une autre forme."
+  
+  utter_BE_non_connu_procedure:
+  - text: "Une copie d'une pièce d'identité est obligatoire, et si elle ne peut être obtenue, le dossier KYC doit être remonté à l'AMLO avant l'ouverture du compte pour étude et avis."
+  
+  utter_Classification_incidence_frequence_revue_periodique:
+  - text: "La classification du client joue un rôle majeur dans le pilotage des risques en matière de sécurité financière relatifs à la clientèle. L’évaluation du risque du client et la classification attribuée a une incidence sur : Les mesures de vigilance / les règles de validation avant l’entrée en relation et lors des revues périodiques / la fréquence des revues périodiques / la nature et l’intensité de la surveillance des opérations à réaliser au titre de l’obligation de vigilance constante."
+  
+  utter_Classification_systématique_RE:
+  - text: "Type de client / Association / Etranger NON RESIDENT / Client ayant un statut PPE"
+  
+  utter_Classification_degradation_necessite_validation_AMLO:
+  - text: "Lorsqu’une dégradation de la classification d’un client est constatée, la validation de l’AMLO devient nécessaire."
+  
+  utter_Classification_entree_en_relation_PM:
+  - text: "Dans le cas d’un client personne morale, doivent être filtrés : Le Client  (dénomination de la société) / Les Dirigeants / Les Actionnaires (personnes physiques ou morales) qui détiennent directement : 10 % ou plus du capital d’un client classé en risque Elevé ; 25 % ou plus du capital d’un client ayant une classification autre qu’Elevé (ensemble, les « Actionnaires Directs ») / Les Bénéficiaires Effectifs / Toute personne détenant une procuration ou un pouvoir."
+  
+  utter_Classification_risque_LCB_FT_relation_affaires:
+  - text: "Le montant et les opérations envisagées."
+  
+  utter_Revue_periodique_what:
+  - text: "La revue périodique du dossier du client a pour objet de s’assurer que les informations détenues sont à jour et en cohérence avec sa situation économique et financière, son activité et l’objet de la relation d’affaires initialement défini. L’actualisation de la connaissance du client résulte en une mise à jour de la classification du client, si nécessaire. La réévaluation d’un stock de dossiers expirés depuis plus de 3 mois correspond à la remédiation. Elle consiste à * Réévaluer la classification risque du client * Réévaluer un stock de dossiers expirés."
+  
+  utter_Revue_periodique_alerte_forces_declencheur:
+  - text: "OUI, un client qui devient fiché déclenche une revue périodique et ce dossier doit être transmis à l'AMLO pour Analyse et décision."
+  
+  utter_Revue_periodique_non_effectuee_solution:
+  - text: "Le dossier doit être transmis à l’AMLO qui décidera de la rupture de la relation d’affaires et de la mise en place d’une surveillance renforcée des opérations et du compte client."
+  
+  utter_Revue_periodique_frequence_PP_MF:
+  - text: "Dans le cas de la clientèle Personne Physique classée en risque faible ou moyennement-faible, il est possible d’effectuer une revue périodique tous les 10 ans. Cette fréquence de revue périodique ne peut être appliquée que lorsque le dossier KYC du client est conforme au sens de la présente instruction."
+  
+  utter_Revue_periodique_frequence_PM_ME:
+  - text: "Tous les deux ans"
+  
+  utter_Revue_periodique_obligatoire_remise_nv_moyen_paiement:
+  - text: "Effectivement, tout contact avec le client pourra être mis à profit pour réaliser une revue complète du dossier KYC : - Remise d’un nouveau moyen de paiement - Souscription d’un produit - Demande de crédit."
+  
+  utter_Revue_periodique_obligatoire_changement_structure_actionnariale:
+  - text: "Une revue périodique doit aussi avoir lieu en cours de relation suite à des faits déclencheurs (liste non exhaustive) : - Changement de la structure actionnariale - Les alertes issues des outils de surveillance où de filtrage des opérations (SironAML et FORCES) - Changement de classification sous le modèle FCCR - Connaissance d’une information négative en cours de relation - Dans le cas d’une relation existante lorsque le client devient une Personne Sanctionnée  - Dans le cas d’une relation existante lorsque le client devient une PPE."
+  
+  utter_Revue_periodique_quels_moments:
+  - text: "A la moindre alerte, une revue périodique doit être enclenchée (liste non exhaustive): - Changement de la structure actionnariale - Les alertes issues des outils de surveillance où de filtrage des opérations (SironAML et FORCES) - Changement de classification sous le modèle FCCR - Connaissance d’une information négative en cours de relation - Dans le cas d’une relation existante lorsque le client devient une Personne Sanctionnée - Dans le cas d’une relation existante lorsque le client devient une PPE."
+  
+  utter_What_is_mandataire:
+  - text: "Un mandataire est une personne physique habilitée par la personne morale à faire fonctionner le compte."
+  
+  utter_What_is_principe_4yeux:
+  - text: "Il est nécessaire d’avoir un deuxième niveau de contrôle des dossiers d’entrée en relation, qui est fait  par le responsable hiérarchique du chargé de compte. Si le responsable est absent, alors il convient de demander la validation au N+2 ou à son back up. cette vérification est effectué à travers un outil (Workflow KYC)"
+
+  utter_What_is_PP_HVA:
+  - text: "High Value Account. Les clients préexistants personnes physiques ayant dépassé le seuil de USD 1 Million d’avoirs agrégés au 30 juin 2014 ou au 31 décembre de l’année 2015 ou d’une année suivante, deviennent HVA (High Value Account – personnes physiques titulaires de comptes de valeur élevée) et le resteront pendant toute la durée de la relation." 
+  
+  utter_Adresse_postale_domicile_client:
+  - text: "Une adresse postale peut être acceptée comme adresse « courrier », mais ne peut en aucun cas être prise comme l’adresse du domicile d’un client."
+  
+  utter_Validation_dossiers_clients_ME:
+  - text: "La validation finale des dossiers risque élevé est de la responsabilité de l'AMLO. Ceci dit, la valitation DA (PP/PM) et DSC (PM) se font en amont de la validation de l'AMLO"
+  
+  utter_Entretien_client_E_conseiller:
+  - text: "Au minimum une fois par an, un entretien entre les clients classés en risque élevé et le conseiller de clientèle doit avoir lieu pour faire un point sur leur situation afin de réaliser une mise à jour de leur KYC."
+  
+  utter_Refus_entree_en_relation:
+  - text: "Le conseiller de clientèle est libre de décliner une entrée en relation, à condition que son refus ne soit pas dicté ni par la mauvaise foi ni par la discrimination"
+  
+  utter_Bearer_Shares_Companies:
+  - text: "Les actionnaires des Bearer Shares Companies sont anonymes. La société émettrice n'enregistre ni le propriétaire de l'action, ni les pistes de transfert de propriété."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
