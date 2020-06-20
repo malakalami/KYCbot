@@ -13,7 +13,7 @@
 
 ## intent:KYC_societe_gestion
 - Une société de gestion est-elle responsable en matière de KYC des investisseurs?
-- Est-ce que les investisseurs d'une société de gestion sont responsables en matière de KYC? 
+- Est-ce que les investisseurs d'une société de gestion sont responsables en matière de KYC?
 
 ## intent:KYC_distributeur_fonds_investissement
 - Un distributeur de fonds d'investissement peut-il être responsable du KYC?
@@ -34,6 +34,7 @@
 ## intent:Document_etudiant_ME_justification_activite
 - Quels sont les justificatifs d'activité qu'un client particulier étudiant classé en risque moyennement élevé peut fournir?
 - Que doit présenter un client particulier étudiant classé en risque moyennement élevé pour le KYC?
+- Quels\n  sont les justificatifs d'activité qu'un client particulier étudiant classé en\n  risque moyennement élevé peut fournir?
 
 ## intent:Document_retraite_ME_justification_activite
 - Quel document un client particulier retraité classé en risque élevé doit-il fournir pour justifier son activité?
@@ -42,6 +43,7 @@
 ## intent:Document_PP_verification_identite
 - Quels sont les documents officiels attestant de l'identité d'un client personne physique?
 - Comment identifier un client personne physique?
+- Quels\n  sont les documents officiels attestant de l'identité d'un client personne\n  physique?
 
 ## intent:Document_PP_procuration_surcompte
 - Quels sont les documents requis pour les personnes physiques ayant reçu procuration sur un compte?
@@ -98,21 +100,22 @@
 ## intent:Document_identite_conditions_validite
 - Quelles sont les conditions de validité d'un document d'identité pour un client personne physique?
 - Que doit remplir un document d'identité pour une personne physique afin de le valider?
+- Quelles\n  sont les conditions de validité d'un document d'identité pour un client\n  personne physique?
 
 ## intent:Document_critère_identite_client_habituel
 - Quels sont les principes clés des informations permettant de vérifier l'identité d'un client habituel?
 - Comment vérifier l'identité d'un client habituel?
 
-## intent:Document_justif_ressources_entrepreneur_indiv 
+## intent:Document_justif_ressources_entrepreneur_indiv
 - Que doit obtenir l'entité IBFS afin de justifier les ressources d'un entrepreneur individuel?
 - Comment un entrepreneur individuel peut justifier ses ressources?
 
-## intent:Document_identification_BE 
+## intent:Document_identification_BE
 - Quelles sources peuvent être recevables pour l'identification d'un bénéficiaire effectif?
 - Comment identifier un bénéficiaire effectif?
 
-## intent:Document_justif_activite_non_salarie_F 
-- Que doit obtenir l'entité IBFS afin de justifier l'activité d'un client particulier non salarié classé en risque faible? 
+## intent:Document_justif_activite_non_salarie_F
+- Que doit obtenir l'entité IBFS afin de justifier l'activité d'un client particulier non salarié classé en risque faible?
 - Comment un client particulier non salarié classé en risque faible peut justifier son activité?
 
 ## intent:Vigilance_personnes_procuration_sur_compte
@@ -132,7 +135,7 @@
 - Est-ce que le membre d'un gouvernement ou de la Comission Européenne est une PPE High Level?
 
 ## intent:PPE_notion_associee
-- Quelle notion est associée à celle de PPE ? 
+- Quelle notion est associée à celle de PPE ?
 - C'est quoi une PPE?
 
 ## intent:PPE_cessation_fonction_statut_PPE
@@ -140,7 +143,7 @@
 - Si un client PPE a terminé ses fonctions depuis plus de 3 ans, est-ce qu'il perd automatiquement son statut PPE?
 
 ## intent:PPE_fin_statut
-- Quand prend fin le statut de PPE ? 
+- Quand prend fin le statut de PPE ?
 - Quand se termine me statut de PPE?
 
 ## intent:PPE_distinction_nationale_etrangere
@@ -161,7 +164,8 @@
 
 ## intent:Embargos_sanctions_dispositif
 - Que requiert le dispositif embargos/sanctions pour l’ensemble des clients ?
-- Qu'est ce que le dispositif embargos/sanctions oblige pour ses clients?  
+- Qu'est ce que le dispositif embargos/sanctions oblige pour ses clients?
+- Que\n  requiert le dispositif embargos/sanctions pour l’ensemble des clients ?
 
 ## intent:Embargos_sanctions_outil_verification
 - Quel est l’outil  qui permet les vérifications sur les listes internationales Embargos & Sanctions?
@@ -180,8 +184,9 @@
 - Citez quelques sources d'informations négatives?
 
 ## intent:Information_negative_niveau_validation_client_MF
-- Quel est le niveau de validation requis pour un client présentant des informations négatives classé en risque Moyennement-Faible ? 
+- Quel est le niveau de validation requis pour un client présentant des informations négatives classé en risque Moyennement-Faible ?
 - Pour un client classé en risque MF et présentant des informations négatives, comment le valider?
+- Quel est\n  le niveau de validation requis pour un client présentant des informations\n  négatives classé en risque Moyennement-Faible ?
 
 ## intent:FATCA_mise_ajour_demenagement_usa
 - Un client a déménagé pour habiter aux Etats-Unis. Sous quel délai les documents nécessaires doivent-ils être collectés  afin de mettre à jour son statut FATCA?
@@ -198,21 +203,23 @@
 ## intent:BE_difference_client_RF_client_RE
 - Quelle est la différence entre les clients classés en risque faible / moyennement faible et les clients classés en risque moyennement élevé/ élevé concernant l’identification des bénéficiaires effectifs PM ?
 - Concernant l'identification des bénéficiaires effectifs PM, quelle est la différence entre un client classé en risque F / MF et un autre classé en rsique E / ME?
+- Quelle\n  est la différence entre les clients classés en risque faible / moyennement\n  faible et les clients classés en risque moyennement élevé/ élevé concernant\n  l’identification des bénéficiaires effectifs PM ?
 
 ## intent:BE_identification_non_applicable
 - Dans quel cas l’identification des bénéficiaires effectifs et des actionnaires directs n’est pas applicable ?
 - Dans quel cas l’identification des bénéficiaires effectifs et des actionnaires directs n’est plus valide?
 
 ## intent:BE_seuil_identification_10%
-- Dans quelle situation le seuil d’identification des Bénéficiaires Effectifs est abaissé à 10% ? 
+- Dans quelle situation le seuil d’identification des Bénéficiaires Effectifs est abaissé à 10% ?
 - Quand le seuil d'identification des BE est abaissé à 10%?
 
 ## intent:BE_what
 - Quelle est la définition du BE?
 - C'est un BE?
+- C'est\n  quoi un bénéficiaire effectif?
 
 ## intent:BE_elements_necessaires
-- Quels sont les éléments nécessaires à collecter sur les Bénéficiaires Effectifs ? 
+- Quels sont les éléments nécessaires à collecter sur les Bénéficiaires Effectifs ?
 - Que doit-on collecter pour les bénéficiares effectifs?
 
 ## intent:BE_tresorier_association
@@ -243,7 +250,7 @@
 - A l’entrée en relation, quelles sont les personnes devant être filtrées sur l’outil FORCES Online lorsque le client est une Personne Morale ?
 - Dans le cas d'une personne morale, quelles sont les personnes concernées par l'outil Forces Online?
 
-## intent:Classification_risque_LCB_FT_relation_affaires 
+## intent:Classification_risque_LCB_FT_relation_affaires
 - Quelle information permet d'évaluer le risque LCB/FT de la relation d'affaires du client?
 - Comment évalue t-on le rsique de la relation d'affaires d'un client?
 
@@ -253,7 +260,7 @@
 
 ## intent:Revue_periodique_alerte_forces_declencheur
 - Une alerte issue de FORCES est-elle considérée comme un fait déclencheur ?
-- Est-ce qu'une alerte sur Forces est un fait déclencheur? 
+- Est-ce qu'une alerte sur Forces est un fait déclencheur?
 
 ## intent:Revue_periodique_non_effectuee_solution
 - Quelle solution se présente lorsque le gestionnaire ne parvient pas à effectuer la revue périodique d'un client?
@@ -274,9 +281,10 @@
 ## intent:Revue_periodique_obligatoire_changement_structure_actionnariale
 - En cas de changement de structure actionnariale, une revue périodique est-elle nécessaire ?
 - Est-ce qu'on doit faire une revue périodique si on change une structure actionnariale?
+- En cas\n  de changement de structure actionnariale, une revue périodique est-elle\n  nécessaire ?
 
 ## intent:Revue_periodique_quels_moments
-- A quels moments doit être enclenchée la revue périodique? 
+- A quels moments doit être enclenchée la revue périodique?
 - Quand doit-on déclencher une revue périodique?
 
 ## intent:What_is_mandataire
@@ -310,113 +318,3 @@
 ## intent:Bearer_Shares_Companies
 - Pourquoi les Bearer Shares Companies présentent un risque significatif?
 - Pourquoi les Bearer Shares Companies sont risquées?
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
